@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100vw;
+}
+.hbd{
+transform: translateX(100%);
+height:80vh;
+transform: translateZ(-50);
+}
+
+#start{
+  width:100vw;
+}
+#viedio1{
+background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+
+}
+
+.preload{
+  position: fixed;
+  top: 0;
+  width: 100% ;
+  height : 100vh;
+  background: #77b3d4;
+  display: flex;
+  justify-content: centre ;
+  align-items: center;
+  transition: opacity 0.5s ease ;
+}
+.cloud1,
+.cloud2,
+.cloud3{
+  height :100px;
+  position: absolute;
+  right:0%;
+}
+
+.cloud1{
+  top: 25%;
+  transform: translate(100%,-25%);
+  animation: clouds 3s ease infinite  ;
+}
+
+
+.cloud2{
+  top: 50%;
+  transform: translate(100%,-50%);
+  animation: clouds 3s ease infinite 2s  ;
+}
+
+
+.cloud3{
+  top: 75%;
+  transform: translate(100%,-75%);
+  animation: clouds 3s ease infinite 1s  ;
+}
+
+.airplane{
+  height: 200px;
+  position:  center;
+  transform: translateX(100%);
+  animation-name: airplane ;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.preload h3 {
+  position: absolute;
+  top:75%;
+  transform: translateY(-75%);
+  color: white;
+
+}
+
+.preload.over{
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+}
+
+@keyframes airplane {
+  from {
+    transform: translateX(100%) translateY(0px);
+    }
+  to{
+    transform: translateX(100%) translateY(50px);
+  }
+}
+
+@keyframes clouds{
+  from{
+    right: 0%;
+  }
+  to{
+    right:130%;
+  }
+}
+
+#viedio1{
+  height: 100vh;
+  width: 90vw;
+}
+#viedio2{
+  height:100vh;
+  width:100vw;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+#viedio2 video{
+  transform: translateX(850px);
+  border: 50px black;
+}
+#h123{
+  font-size: 35px;
+  align-items: center;
+}
+#whs{
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  display:grid;
+  justify-content: center;
+  padding:400px;
+  grid-template-rows: 100vh,100vh,100vh;
+}
+#wish_intro{
+  justify-content: center;
+  height: 120vh;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+#wish_intro img{
+  width: 1000px;
+  height:1000px;
+transform: translateX(450px);
+
+}
+
+.wish1{
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+/* wish1 */
+
+#wish1{
+  background: url('images/wish1.jpg');
+  height:100vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 70vw 80vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+.wish3{
+background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+#wish3{
+  background: url('images/wish3.jpg');
+  height:100vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 85vw 80vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+#bunny_image_2{
+  height:1000px;
+  width:100px;
+  position: relative;
+  transform: translateX(-1000px) translateY(-1000px);
+  transform: scale(10,10);
+}
+
+
+.wish4{
+background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+/* wish4 */
+
+#wish4{
+  background: url('images/wish4.jpg');
+  height:120vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 80vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+
+
+
+
+#wish51{
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+   background-blend-mode: screen;
+}
+
+/* wish5 */
+
+#wish5{
+  background: url('images/wish5.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 75vw 80vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish5 #wish5 img{
+  height:250px;
+  width:150px;
+  transform:translateX(1000px) translateY(100px);
+}
+
+ #wish5 p{
+  font-size:28px;
+  width: 50vw;
+  transform: translateX(250px) translateY(-65px);
+}
+
+
+
+
+
+.wish6{
+
+}
+
+/* wish6 */
+
+#wish6{
+  background: url('images/wish6.jpg');
+  height:100vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 85vw 80vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+background-color: #ddc5d5;
+}
+
+.wish6 #wish6 img{
+  height:250px;
+  width:150px;
+  transform:translateX(1000px) translateY(100px);
+}
+
+ #wish6 p{
+  font-size:28px;
+  width: 50vw;
+  transform: translateX(250px) translateY(-65px);
+}
+
+
+
+
+
+
+.wish7{
+background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);}
+
+/* wish7 */
+
+#wish7{
+  background: url('images/wish7.jpg');
+  height:120vh;
+  background-position: center;
+  background-size: contain;
+  background-size: 70vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+.wish8{
+
+}
+
+/* wish8 */
+
+#wish8{
+  background: url('images/wish8.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 70vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+background-color: #ddc5d5;
+}
+
+.wish9{
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+/* wish9 */
+
+#wish9{
+  background: url('images/wish9.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 80vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+}
+
+.wish10{
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+/* wish10 */
+
+#wish10{
+  background: url('images/wish10.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 75vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+.wish11{
+background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
+
+/* wish11 */
+
+#wish11{
+  background: url('images/wish11.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 75vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+
+
+
+
+
+.wish12{
+background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+/* wish12 */
+
+#wish12{
+  background: url('images/wish12.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 75vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish13{
+background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+
+/* wish13 */
+
+#wish13{
+  background: url('images/wish13.jpg');
+  height:110vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 80vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish14{
+background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+/* wish14 */
+
+#wish14{
+  background: url('images/wish14.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 80vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish15{
+background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+/* wish15 */
+
+#wish15{
+  background: url('images/wish15.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 55vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+.wish16{
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+/* wish16 */
+
+#wish16{
+  background: url('images/wish16.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 55vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish17{
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+/* wish17 */
+
+#wish17{
+  background: url('images/wish17.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 55vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish18{
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+/* wish18 */
+
+#wish18{
+  background: url('images/wish18.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 55vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+
+.wish19{
+background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+}
+
+/* wish19 */
+
+#wish19{
+  background: url('images/wish19.jpg');
+  height:140vh;
+  background-position: center;
+  background-size: contain ;
+  background-size: 55vw 100vh;
+  background-repeat: no-repeat;
+  align-items: center;
+  display: flex;
+  align-content: center;
+  overflow: hidden;
+
+}
+#last{
+  height:100vh;
+}
+#end{
+  transform: translateX(700px);
+}
